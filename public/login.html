@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masuk - Egunkari</title>
+  <meta name="description" content="Halaman masuk Egunkari">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <h1 class="logo">
+          <i class="fas fa-pen-fancy logo-icon"></i>
+          Egunkari
+        </h1>
+        <p class="tagline">Tempat berbagi karya tulis kreatif dengan komunitas penulis Indonesia</p>
+      </div>
+    </header>
+    
+    <nav class="navbar">
+      <div class="nav-content container">
+        <div class="nav-links">
+          <a href="/" class="nav-link"><i class="fas fa-home"></i> Beranda</a>
+          <a href="/login.html" class="nav-link active"><i class="fas fa-sign-in-alt"></i> Masuk</a>
+          <a href="/register.html" class="nav-link"><i class="fas fa-user-plus"></i> Daftar</a>
+        </div>
+        <div class="nav-actions">
+          <button id="themeToggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    
+    <main class="main-content">
+      <div class="auth-container">
+        <div class="auth-card">
+          <div class="auth-header">
+            <h2><i class="fas fa-sign-in-alt"></i> Masuk ke Akun</h2>
+            <p>Silakan masuk untuk mengakses dashboard penulis Anda</p>
+          </div>
+          
+          <form id="loginForm" class="auth-form">
+            <div class="form-group">
+              <label for="email"><i class="fas fa-envelope"></i> Email</label>
+              <input type="email" id="email" name="email" required placeholder="Masukkan email Anda">
+            </div>
+            <div class="form-group">
+              <label for="password"><i class="fas fa-lock"></i> Kata Sandi</label>
+              <input type="password" id="password" name="password" required placeholder="Masukkan kata sandi">
+              <a href="#" class="forgot-password">Lupa kata sandi?</a>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg"><i class="fas fa-sign-in-alt"></i> Masuk</button>
+          </form>
+          
+          <div class="auth-footer">
+            <p>Belum punya akun? <a href="/register.html">Daftar di sini</a></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <footer class="footer">
+      <div class="footer-content container">
+        <div class="footer-links">
+          <a href="#" class="footer-link">Tentang Kami</a>
+          <a href="#" class="footer-link">Kebijakan Privasi</a>
+          <a href="#" class="footer-link">Syarat & Ketentuan</a>
+          <a href="#" class="footer-link">Kontak</a>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="container text-center mt-md">
+        <p>&copy; <span id="currentYear"></span> Egunkari. Semua hak dilindungi.</p>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="/js/auth.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

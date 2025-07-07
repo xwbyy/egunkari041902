@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karya - Egunkari</title>
+  <meta name="description" content="Baca karya di Egunkari">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <h1 class="logo">
+          <i class="fas fa-pen-fancy logo-icon"></i>
+          Egunkari
+        </h1>
+        <p class="tagline">Tempat berbagi karya tulis kreatif dengan komunitas penulis Indonesia</p>
+      </div>
+    </header>
+    
+    <nav class="navbar">
+      <div class="nav-content container">
+        <div class="nav-links">
+          <a href="/" class="nav-link"><i class="fas fa-home"></i> Beranda</a>
+          <a href="/dashboard.html" class="nav-link" id="dashboardNavLink"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+          <a href="/write.html" class="nav-link" id="writeNavLink"><i class="fas fa-pen"></i> Tulis Baru</a>
+          <a href="/profile.html" class="nav-link" id="profileNavLink"><i class="fas fa-user"></i> Profil</a>
+          <a href="#" class="nav-link" id="logoutNavLink"><i class="fas fa-sign-out-alt"></i> Keluar</a>
+        </div>
+        <div class="nav-actions">
+          <a href="/login.html" class="nav-link" id="loginNavLink" style="display: none;"><i class="fas fa-sign-in-alt"></i> Masuk</a>
+          <button id="themeToggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    
+    <main class="main-content">
+      <article class="post-article">
+        <div class="post-header">
+          <h1 id="postTitle">Judul Karya</h1>
+          <div class="post-meta">
+            <span class="author" id="postAuthor">Oleh Pengarang</span>
+            <span class="date" id="postDate">1 Januari 2023</span>
+            <span class="views" id="postViews">0 dilihat</span>
+          </div>
+          <div class="tags" id="postTags">
+            <!-- Tags will be loaded here -->
+          </div>
+        </div>
+        
+        <div class="post-content" id="postContent">
+          <!-- Post content will be loaded here -->
+        </div>
+        
+        <div class="post-actions">
+          <button id="likeButton" class="btn btn-like">
+            <i class="fas fa-heart"></i> <span id="likeCount">0</span> Suka
+          </button>
+          <button id="shareButton" class="btn btn-share">
+            <i class="fas fa-share"></i> Bagikan
+          </button>
+          <button id="deleteButton" class="btn btn-danger" style="display: none;">
+            <i class="fas fa-trash"></i> Hapus
+          </button>
+        </div>
+        
+        <div class="post-comments">
+          <h3 class="comments-header"><i class="fas fa-comments"></i> Komentar</h3>
+          <div id="commentsList">
+            <!-- Comments will be loaded here -->
+          </div>
+          
+          <form id="commentForm" class="comment-form">
+            <div class="form-group">
+              <label for="commentText"><i class="fas fa-comment"></i> Tambahkan Komentar</label>
+              <textarea id="commentText" placeholder="Tulis komentar Anda..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Kirim</button>
+          </form>
+        </div>
+      </article>
+    </main>
+    
+    <footer class="footer">
+      <div class="footer-content container">
+        <div class="footer-links">
+          <a href="#" class="footer-link">Tentang Kami</a>
+          <a href="#" class="footer-link">Kebijakan Privasi</a>
+          <a href="#" class="footer-link">Syarat & Ketentuan</a>
+          <a href="#" class="footer-link">Kontak</a>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="container text-center mt-md">
+        <p>&copy; <span id="currentYear"></span> Egunkari. Semua hak dilindungi.</p>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="/js/auth.js"></script>
+  <script src="/js/posts.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

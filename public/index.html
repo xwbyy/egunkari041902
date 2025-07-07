@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Egunkari - Platform Penulisan Kreatif</title>
+  <meta name="description" content="Platform untuk berbagi puisi, cerita, dan karya tulis kreatif">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <h1 class="logo">
+          <i class="fas fa-pen-fancy logo-icon"></i>
+          Egunkari
+        </h1>
+        <p class="tagline">Tempat berbagi karya tulis kreatif dengan komunitas penulis Indonesia</p>
+      </div>
+    </header>
+    
+    <nav class="navbar">
+      <div class="nav-content container">
+        <div class="nav-links">
+          <a href="/" class="nav-link active"><i class="fas fa-home"></i> Beranda</a>
+          <a href="/login.html" class="nav-link" id="loginLink"><i class="fas fa-sign-in-alt"></i> Masuk</a>
+          <a href="/register.html" class="nav-link" id="registerLink"><i class="fas fa-user-plus"></i> Daftar</a>
+          <a href="/dashboard.html" class="nav-link" id="dashboardLink" style="display: none;"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        </div>
+        <div class="nav-actions">
+          <a href="#" class="nav-link" id="logoutLink" style="display: none;"><i class="fas fa-sign-out-alt"></i> Keluar</a>
+          <button id="themeToggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    
+    <main class="main-content">
+      <section class="hero-section">
+        <div class="hero-content">
+          <h2 class="hero-title">Selamat datang di Egunkari</h2>
+          <p class="hero-text">Platform untuk berbagi puisi, cerpen, dan karya tulis kreatif lainnya dengan komunitas penulis Indonesia. Temukan inspirasi, bagikan karya, dan kembangkan bakat menulismu bersama kami.</p>
+          <div class="hero-buttons">
+            <a href="/register.html" class="btn btn-primary btn-lg"><i class="fas fa-pen"></i> Mulai Menulis</a>
+            <a href="/dashboard.html" class="btn btn-secondary btn-lg" id="startWritingLink" style="display: none;"><i class="fas fa-pen"></i> Mulai Menulis</a>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title"><i class="fas fa-star"></i> Karya Terbaru</h2>
+          <a href="/dashboard.html" class="btn btn-outline" id="viewAllLink">Lihat Semua</a>
+        </div>
+        <div id="featuredPosts" class="posts-grid">
+          <!-- Posts will be loaded here -->
+          <div class="card skeleton skeleton-post"></div>
+          <div class="card skeleton skeleton-post"></div>
+          <div class="card skeleton skeleton-post"></div>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="footer">
+      <div class="footer-content container">
+        <div class="footer-links">
+          <a href="#" class="footer-link">Tentang Kami</a>
+          <a href="#" class="footer-link">Kebijakan Privasi</a>
+          <a href="#" class="footer-link">Syarat & Ketentuan</a>
+          <a href="#" class="footer-link">Kontak</a>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="container text-center mt-md">
+        <p>&copy; <span id="currentYear"></span> Egunkari. Semua hak dilindungi.</p>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="/js/auth.js"></script>
+  <script src="/js/posts.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
